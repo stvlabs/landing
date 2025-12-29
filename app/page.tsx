@@ -1,65 +1,107 @@
-import Image from "next/image";
+import { Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex min-h-screen flex-col bg-white">
+      {/* Header */}
+      <header className="border-b">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+          <div className="flex items-center gap-1">
+            <span className="text-xl font-bold">STV</span>
+            <span className="text-lg font-semibold text-gray-600">Labs</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://twitter.com/stvlabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 transition-colors hover:text-black"
+              aria-label="Twitter"
+            >
+              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/stvlabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 transition-colors hover:text-black"
+              aria-label="GitHub"
+            >
+              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="mx-auto flex flex-1 max-w-6xl px-6">
+        {/* Hero Section */}
+        <section className="flex w-full flex-col items-center justify-center py-20 text-center">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-sm">
+            <Sparkles className="h-4 w-4" />
+            <span>Building in public</span>
+          </div>
+
+          <h1 className="mb-6 max-w-3xl text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+            Modern SaaS Starters for Developers
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mb-8 max-w-2xl text-xl text-gray-600">
+            Ship faster with production-ready templates. Beautiful code, best practices, everything you need to launch.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+          {/* Coming Soon Card */}
+          <div className="mt-12 w-full max-w-2xl rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
+            <div className="mb-4 inline-block rounded-md bg-orange-100 px-3 py-1 text-sm font-medium text-orange-900">
+              Coming Soon
+            </div>
+
+            <h2 className="mb-3 text-3xl font-bold">LaunchAI</h2>
+
+            <p className="mb-4 text-lg text-gray-600">
+              Complete Next.js AI SaaS Starter
+            </p>
+
+            <div className="mb-6 flex flex-wrap justify-center gap-2 text-sm text-gray-500">
+              <span className="rounded-md border border-gray-200 bg-gray-50 px-3 py-1">
+                Authentication
+              </span>
+              <span className="rounded-md border border-gray-200 bg-gray-50 px-3 py-1">
+                Payments
+              </span>
+              <span className="rounded-md border border-gray-200 bg-gray-50 px-3 py-1">
+                AI Chat
+              </span>
+              <span className="rounded-md border border-gray-200 bg-gray-50 px-3 py-1">
+                Admin Dashboard
+              </span>
+            </div>
+
+            <p className="text-sm text-gray-500">
+              Launching March 2026
+            </p>
+          </div>
+        </section>
       </main>
+
+      {/* Footer */}
+      <footer className="mt-auto border-t">
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-600 sm:flex-row">
+            <p>&copy; 2025 STV Labs. All rights reserved.</p>
+            <a
+              href="mailto:hello@stvlabs.dev"
+              className="transition-colors hover:text-black"
+            >
+              hello@stvlabs.dev
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
