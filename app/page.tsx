@@ -54,10 +54,10 @@ export default function Home() {
             Ship faster with production-ready templates. Beautiful code, best practices, everything you need to launch.
           </p>
 
-          {/* Coming Soon Card */}
+          {/* Product Card */}
           <div className="mt-12 w-full max-w-2xl rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
-            <div className="mb-4 inline-block rounded-md bg-orange-100 px-3 py-1 text-sm font-medium text-orange-900">
-              Coming Soon
+            <div className="mb-4 inline-block rounded-md bg-green-100 px-3 py-1 text-sm font-medium text-green-900">
+              Just Launched
             </div>
 
             <h2 className="mb-3 text-3xl font-bold">LaunchAI</h2>
@@ -81,9 +81,14 @@ export default function Home() {
               </span>
             </div>
 
-            <p className="text-sm text-gray-500">
-              Launching March 2026
-            </p>
+            <a
+              href="https://stvlabs.gumroad.com/l/launchai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-md bg-black px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800"
+            >
+              Get LaunchAI
+            </a>
           </div>
         </section>
       </main>
@@ -92,7 +97,7 @@ export default function Home() {
       <footer className="mt-auto border-t">
         <div className="mx-auto max-w-6xl px-6 py-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-600 sm:flex-row">
-            <p>&copy; 2025 STV Labs. All rights reserved.</p>
+            <p>&copy; 2026 STV Labs. All rights reserved.</p>
             <a
               href="mailto:hello@stvlabs.dev"
               className="transition-colors hover:text-black"

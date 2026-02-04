@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "STV Labs - Modern SaaS Starters for Developers",
-  description: "Ship faster with production-ready templates. Building LaunchAI - a complete Next.js AI SaaS starter. Launching March 2026.",
+  description: "Ship faster with production-ready templates. LaunchAI - a complete Next.js AI SaaS starter - is now available.",
   keywords: ["SaaS", "Next.js", "AI", "starter template", "LaunchAI", "developer tools"],
   authors: [{ name: "STV Labs" }],
   openGraph: {
